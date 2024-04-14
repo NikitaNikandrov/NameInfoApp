@@ -7,11 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        //Mark: testing removed storyboard and scenedelegate
+        self.view.backgroundColor = .systemBlue
     }
 
 
