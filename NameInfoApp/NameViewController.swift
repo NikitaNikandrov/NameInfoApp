@@ -11,9 +11,9 @@ class NameViewController: UIViewController {
     private let nameTextField: UITextField = {
         var textField = UITextField()
         textField.attributedPlaceholder = NSAttributedString(
-            string: "Searching name",
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray,
-                         .font: UIFont.systemFont(ofSize: 18, weight: .regular)])
+                                                            string: "Searching name",
+                                                            attributes: [NSAttributedString.Key.foregroundColor:    UIColor.systemGray,
+                                                                         .font: UIFont.systemFont(ofSize: 18, weight: .regular)])
         textField.backgroundColor = UIColor.white
         textField.textColor = UIColor.black
         textField.layer.borderWidth = 2.0
@@ -26,24 +26,23 @@ class NameViewController: UIViewController {
     }()
     
     private let searchButton: UIButton = {
-            let button = UIButton()
+        let button = UIButton()
         button.backgroundColor = UIColor.systemBlue
-            button.setTitle("Search", for: .normal)
-            button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .regular)
-            button.titleLabel?.textColor = .white
-            button.layer.borderWidth = 2.0
-            button.layer.borderColor = UIColor.white.cgColor
-            button.layer.cornerRadius = 20
-            button.translatesAutoresizingMaskIntoConstraints = false
-            //button.addTarget(self, action: #selector(logInButtonIsPressed), for: .touchUpInside)
-            return button
-        }()
+        button.setTitle("Search", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        button.titleLabel?.textColor = .white
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = UIColor.white.cgColor
+        button.layer.cornerRadius = 20
+        button.translatesAutoresizingMaskIntoConstraints = false
+        //button.addTarget(self, action: #selector(), for: .touchUpInside)
+        return button
+    }()
     
+    //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-    
-    
 }
 
