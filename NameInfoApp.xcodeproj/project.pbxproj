@@ -11,6 +11,18 @@
 		E5D909EA2BCC0CD500FC041C /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D909E92BCC0CD500FC041C /* NameViewController.swift */; };
 		E5D909EF2BCC0CD700FC041C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D909EE2BCC0CD700FC041C /* Assets.xcassets */; };
 		E5D909F22BCC0CD700FC041C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E5D909F12BCC0CD700FC041C /* Base */; };
+		E5D909FE2BCC231E00FC041C /* NamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D909FD2BCC231E00FC041C /* NamePresenter.swift */; };
+		E5D90A0D2BCC6AF800FC041C /* NameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A0C2BCC6AF800FC041C /* NameRouter.swift */; };
+		E5D90A0F2BCC6BAD00FC041C /* NameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A0E2BCC6BAD00FC041C /* NameInteractor.swift */; };
+		E5D90A112BCC6C5B00FC041C /* NameModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A102BCC6C5B00FC041C /* NameModuleBuilder.swift */; };
+		E5D90A132BCC70C800FC041C /* AgeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A122BCC70C800FC041C /* AgeService.swift */; };
+		E5D90A152BCC710500FC041C /* GenderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A142BCC710500FC041C /* GenderService.swift */; };
+		E5D90A172BCC714500FC041C /* NationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A162BCC714500FC041C /* NationService.swift */; };
+		E5D90A1A2BCC819E00FC041C /* ShowNameDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A192BCC819E00FC041C /* ShowNameDataViewController.swift */; };
+		E5D90A1C2BCC820E00FC041C /* ShowNameDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A1B2BCC820E00FC041C /* ShowNameDataPresenter.swift */; };
+		E5D90A1E2BCC823900FC041C /* ShowNameDataRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A1D2BCC823900FC041C /* ShowNameDataRouter.swift */; };
+		E5D90A202BCC824F00FC041C /* ShowNameDataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A1F2BCC824F00FC041C /* ShowNameDataInteractor.swift */; };
+		E5D90A222BCC826C00FC041C /* ShowNameDataModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A212BCC826C00FC041C /* ShowNameDataModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +32,18 @@
 		E5D909EE2BCC0CD700FC041C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5D909F12BCC0CD700FC041C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5D909F32BCC0CD700FC041C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5D909FD2BCC231E00FC041C /* NamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePresenter.swift; sourceTree = "<group>"; };
+		E5D90A0C2BCC6AF800FC041C /* NameRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRouter.swift; sourceTree = "<group>"; };
+		E5D90A0E2BCC6BAD00FC041C /* NameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInteractor.swift; sourceTree = "<group>"; };
+		E5D90A102BCC6C5B00FC041C /* NameModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameModuleBuilder.swift; sourceTree = "<group>"; };
+		E5D90A122BCC70C800FC041C /* AgeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeService.swift; sourceTree = "<group>"; };
+		E5D90A142BCC710500FC041C /* GenderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderService.swift; sourceTree = "<group>"; };
+		E5D90A162BCC714500FC041C /* NationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationService.swift; sourceTree = "<group>"; };
+		E5D90A192BCC819E00FC041C /* ShowNameDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNameDataViewController.swift; sourceTree = "<group>"; };
+		E5D90A1B2BCC820E00FC041C /* ShowNameDataPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNameDataPresenter.swift; sourceTree = "<group>"; };
+		E5D90A1D2BCC823900FC041C /* ShowNameDataRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNameDataRouter.swift; sourceTree = "<group>"; };
+		E5D90A1F2BCC824F00FC041C /* ShowNameDataInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNameDataInteractor.swift; sourceTree = "<group>"; };
+		E5D90A212BCC826C00FC041C /* ShowNameDataModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNameDataModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +76,65 @@
 		E5D909E42BCC0CD500FC041C /* NameInfoApp */ = {
 			isa = PBXGroup;
 			children = (
+				E5D90A0B2BCC67B800FC041C /* Name */,
+				E5D90A182BCC814500FC041C /* ShowNameData */,
+				E5D90A0A2BCC649800FC041C /* API */,
+				E5D90A082BCC63FE00FC041C /* Application */,
+				E5D90A092BCC641B00FC041C /* Resources */,
+			);
+			path = NameInfoApp;
+			sourceTree = "<group>";
+		};
+		E5D90A082BCC63FE00FC041C /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				E5D909E52BCC0CD500FC041C /* AppDelegate.swift */,
-				E5D909E92BCC0CD500FC041C /* NameViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E5D90A092BCC641B00FC041C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				E5D909EE2BCC0CD700FC041C /* Assets.xcassets */,
 				E5D909F02BCC0CD700FC041C /* LaunchScreen.storyboard */,
 				E5D909F32BCC0CD700FC041C /* Info.plist */,
 			);
-			path = NameInfoApp;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E5D90A0A2BCC649800FC041C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A122BCC70C800FC041C /* AgeService.swift */,
+				E5D90A142BCC710500FC041C /* GenderService.swift */,
+				E5D90A162BCC714500FC041C /* NationService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E5D90A0B2BCC67B800FC041C /* Name */ = {
+			isa = PBXGroup;
+			children = (
+				E5D909E92BCC0CD500FC041C /* NameViewController.swift */,
+				E5D909FD2BCC231E00FC041C /* NamePresenter.swift */,
+				E5D90A0C2BCC6AF800FC041C /* NameRouter.swift */,
+				E5D90A0E2BCC6BAD00FC041C /* NameInteractor.swift */,
+				E5D90A102BCC6C5B00FC041C /* NameModuleBuilder.swift */,
+			);
+			path = Name;
+			sourceTree = "<group>";
+		};
+		E5D90A182BCC814500FC041C /* ShowNameData */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A192BCC819E00FC041C /* ShowNameDataViewController.swift */,
+				E5D90A1B2BCC820E00FC041C /* ShowNameDataPresenter.swift */,
+				E5D90A1D2BCC823900FC041C /* ShowNameDataRouter.swift */,
+				E5D90A1F2BCC824F00FC041C /* ShowNameDataInteractor.swift */,
+				E5D90A212BCC826C00FC041C /* ShowNameDataModuleBuilder.swift */,
+			);
+			path = ShowNameData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +207,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D90A1E2BCC823900FC041C /* ShowNameDataRouter.swift in Sources */,
+				E5D90A112BCC6C5B00FC041C /* NameModuleBuilder.swift in Sources */,
+				E5D90A172BCC714500FC041C /* NationService.swift in Sources */,
 				E5D909EA2BCC0CD500FC041C /* NameViewController.swift in Sources */,
+				E5D90A0D2BCC6AF800FC041C /* NameRouter.swift in Sources */,
+				E5D90A202BCC824F00FC041C /* ShowNameDataInteractor.swift in Sources */,
+				E5D90A132BCC70C800FC041C /* AgeService.swift in Sources */,
+				E5D90A222BCC826C00FC041C /* ShowNameDataModuleBuilder.swift in Sources */,
+				E5D90A152BCC710500FC041C /* GenderService.swift in Sources */,
+				E5D90A1A2BCC819E00FC041C /* ShowNameDataViewController.swift in Sources */,
+				E5D90A0F2BCC6BAD00FC041C /* NameInteractor.swift in Sources */,
+				E5D90A1C2BCC820E00FC041C /* ShowNameDataPresenter.swift in Sources */,
 				E5D909E62BCC0CD500FC041C /* AppDelegate.swift in Sources */,
+				E5D909FE2BCC231E00FC041C /* NamePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +366,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L8ZXWNP3PM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NameInfoApp/Info.plist;
+				INFOPLIST_FILE = NameInfoApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -305,7 +393,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L8ZXWNP3PM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NameInfoApp/Info.plist;
+				INFOPLIST_FILE = NameInfoApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
