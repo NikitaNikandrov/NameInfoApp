@@ -9,16 +9,20 @@ import Foundation
 
 protocol NamePresenterProtocol: AnyObject {
     func viewDidLoaded()
-    func searchButtonClicked()
-    func ageDidLoaded(age: String?)
-    func genderDidLoaded(gender: String?)
-    func nationDidLoaded(nation: String?)
+    func searchButtonClicked(with name: String)
+    func ageDidLoaded()
+    func genderDidLoaded()
+    func nationDidLoaded()
 }
 
 class NamePresenter {
     weak var view: NameViewProtocol?
     var router: NameRouterProtocol
     var interactor: NameInteractorProtocol
+    
+    private var age: String?
+    private var gender: String?
+    private var nation: String?
     
     init(router: NameRouterProtocol, interactor: NameInteractorProtocol) {
         self.router = router
@@ -31,22 +35,26 @@ extension NamePresenter: NamePresenterProtocol {
         //Start loading info
     }
     
-    func searchButtonClicked() {
+    func searchButtonClicked(with name: String) {
         //Parallels load, wait and return all data at one time
-        interactor.loadAgeData()
-        interactor.loadGenderData()
-        interactor.loadNationData()
+        interactor.loadAgeData(with: name)
+        interactor.loadGenderData(with: name)
+        interactor.loadNationData(with: name)
+        
+        router.showNameData(age: self.age ?? "",
+                            gender: self.gender ?? "",
+                            nation: self.nation ?? "")
     }
     
-    func ageDidLoaded(age: String?) {
-        
+    func ageDidLoaded() {
+        self.age = interactor.age
     }
     
-    func genderDidLoaded(gender: String?) {
-        
+    func genderDidLoaded() {
+        self.gender = interactor.gender
     }
     
-    func nationDidLoaded(nation: String?) {
-        
+    func nationDidLoaded() {
+        self.nation = interactor.nation
     }
 }

@@ -8,13 +8,11 @@
 import Foundation
 
 protocol ShowNameDataRouterProtocol: AnyObject {
-    
 }
 
 class ShowNameDataRouter {
     weak var viewController: ShowNameDataViewController?
 }
 
-extension ShowNameDataRouter: ShowNameDataRouterProtocol {
-    
+extension ShowNameDataRouter: ShowNameDataRouterProtocol {    
 }

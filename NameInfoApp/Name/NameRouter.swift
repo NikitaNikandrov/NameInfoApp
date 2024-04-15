@@ -8,13 +8,14 @@
 import Foundation
 
 protocol NameRouterProtocol: AnyObject {
-    
+    func showNameData(age: String, gender: String, nation: String)
 }
 
-class NameRouter {
+class NameRouter: NameRouterProtocol {
     weak var viewController: NameViewController?
-}
-
-extension NameRouter: NameRouterProtocol {
     
+    func showNameData(age: String, gender: String, nation: String) {
+        let vc = ShowNameDataModuleBuilder.build(age: age, gender: gender, nation: nation)
+        viewController?.present(vc, animated: true, completion: nil)
+    }
 }
