@@ -23,6 +23,9 @@
 		E5D90A1E2BCC823900FC041C /* ShowNameDataRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A1D2BCC823900FC041C /* ShowNameDataRouter.swift */; };
 		E5D90A202BCC824F00FC041C /* ShowNameDataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A1F2BCC824F00FC041C /* ShowNameDataInteractor.swift */; };
 		E5D90A222BCC826C00FC041C /* ShowNameDataModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A212BCC826C00FC041C /* ShowNameDataModuleBuilder.swift */; };
+		E5D90A252BD41D5300FC041C /* AgeServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A242BD41D5300FC041C /* AgeServiceModel.swift */; };
+		E5D90A282BD41D8400FC041C /* GenderServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A272BD41D8400FC041C /* GenderServiceModel.swift */; };
+		E5D90A2A2BD41D9500FC041C /* NationServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A292BD41D9500FC041C /* NationServiceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		E5D90A1D2BCC823900FC041C /* ShowNameDataRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNameDataRouter.swift; sourceTree = "<group>"; };
 		E5D90A1F2BCC824F00FC041C /* ShowNameDataInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNameDataInteractor.swift; sourceTree = "<group>"; };
 		E5D90A212BCC826C00FC041C /* ShowNameDataModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNameDataModuleBuilder.swift; sourceTree = "<group>"; };
+		E5D90A242BD41D5300FC041C /* AgeServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeServiceModel.swift; sourceTree = "<group>"; };
+		E5D90A272BD41D8400FC041C /* GenderServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderServiceModel.swift; sourceTree = "<group>"; };
+		E5D90A292BD41D9500FC041C /* NationServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationServiceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +112,9 @@
 		E5D90A0A2BCC649800FC041C /* API */ = {
 			isa = PBXGroup;
 			children = (
-				E5D90A122BCC70C800FC041C /* AgeService.swift */,
-				E5D90A142BCC710500FC041C /* GenderService.swift */,
-				E5D90A162BCC714500FC041C /* NationService.swift */,
+				E5D90A232BD41D2E00FC041C /* AgeService */,
+				E5D90A262BD41D5E00FC041C /* GenderService */,
+				E5D90A2B2BD41DA200FC041C /* NationService */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -135,6 +141,33 @@
 				E5D90A212BCC826C00FC041C /* ShowNameDataModuleBuilder.swift */,
 			);
 			path = ShowNameData;
+			sourceTree = "<group>";
+		};
+		E5D90A232BD41D2E00FC041C /* AgeService */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A122BCC70C800FC041C /* AgeService.swift */,
+				E5D90A242BD41D5300FC041C /* AgeServiceModel.swift */,
+			);
+			path = AgeService;
+			sourceTree = "<group>";
+		};
+		E5D90A262BD41D5E00FC041C /* GenderService */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A142BCC710500FC041C /* GenderService.swift */,
+				E5D90A272BD41D8400FC041C /* GenderServiceModel.swift */,
+			);
+			path = GenderService;
+			sourceTree = "<group>";
+		};
+		E5D90A2B2BD41DA200FC041C /* NationService */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A162BCC714500FC041C /* NationService.swift */,
+				E5D90A292BD41D9500FC041C /* NationServiceModel.swift */,
+			);
+			path = NationService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,12 +243,15 @@
 				E5D90A1E2BCC823900FC041C /* ShowNameDataRouter.swift in Sources */,
 				E5D90A112BCC6C5B00FC041C /* NameModuleBuilder.swift in Sources */,
 				E5D90A172BCC714500FC041C /* NationService.swift in Sources */,
+				E5D90A252BD41D5300FC041C /* AgeServiceModel.swift in Sources */,
 				E5D909EA2BCC0CD500FC041C /* NameViewController.swift in Sources */,
 				E5D90A0D2BCC6AF800FC041C /* NameRouter.swift in Sources */,
 				E5D90A202BCC824F00FC041C /* ShowNameDataInteractor.swift in Sources */,
+				E5D90A2A2BD41D9500FC041C /* NationServiceModel.swift in Sources */,
 				E5D90A132BCC70C800FC041C /* AgeService.swift in Sources */,
 				E5D90A222BCC826C00FC041C /* ShowNameDataModuleBuilder.swift in Sources */,
 				E5D90A152BCC710500FC041C /* GenderService.swift in Sources */,
+				E5D90A282BD41D8400FC041C /* GenderServiceModel.swift in Sources */,
 				E5D90A1A2BCC819E00FC041C /* ShowNameDataViewController.swift in Sources */,
 				E5D90A0F2BCC6BAD00FC041C /* NameInteractor.swift in Sources */,
 				E5D90A1C2BCC820E00FC041C /* ShowNameDataPresenter.swift in Sources */,
