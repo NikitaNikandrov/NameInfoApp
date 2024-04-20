@@ -26,6 +26,7 @@
 		E5D90A252BD41D5300FC041C /* AgeServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A242BD41D5300FC041C /* AgeServiceModel.swift */; };
 		E5D90A282BD41D8400FC041C /* GenderServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A272BD41D8400FC041C /* GenderServiceModel.swift */; };
 		E5D90A2A2BD41D9500FC041C /* NationServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A292BD41D9500FC041C /* NationServiceModel.swift */; };
+		E5D90A2E2BD4255400FC041C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A2D2BD4255400FC041C /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E5D90A242BD41D5300FC041C /* AgeServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeServiceModel.swift; sourceTree = "<group>"; };
 		E5D90A272BD41D8400FC041C /* GenderServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderServiceModel.swift; sourceTree = "<group>"; };
 		E5D90A292BD41D9500FC041C /* NationServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationServiceModel.swift; sourceTree = "<group>"; };
+		E5D90A2D2BD4255400FC041C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,11 +84,12 @@
 		E5D909E42BCC0CD500FC041C /* NameInfoApp */ = {
 			isa = PBXGroup;
 			children = (
-				E5D90A0B2BCC67B800FC041C /* Name */,
-				E5D90A182BCC814500FC041C /* ShowNameData */,
 				E5D90A0A2BCC649800FC041C /* API */,
 				E5D90A082BCC63FE00FC041C /* Application */,
+				E5D90A0B2BCC67B800FC041C /* Name */,
+				E5D90A2C2BD4204900FC041C /* NetworkService */,
 				E5D90A092BCC641B00FC041C /* Resources */,
+				E5D90A182BCC814500FC041C /* ShowNameData */,
 			);
 			path = NameInfoApp;
 			sourceTree = "<group>";
@@ -170,6 +173,14 @@
 			path = NationService;
 			sourceTree = "<group>";
 		};
+		E5D90A2C2BD4204900FC041C /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A2D2BD4255400FC041C /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,6 +255,7 @@
 				E5D90A112BCC6C5B00FC041C /* NameModuleBuilder.swift in Sources */,
 				E5D90A172BCC714500FC041C /* NationService.swift in Sources */,
 				E5D90A252BD41D5300FC041C /* AgeServiceModel.swift in Sources */,
+				E5D90A2E2BD4255400FC041C /* NetworkService.swift in Sources */,
 				E5D909EA2BCC0CD500FC041C /* NameViewController.swift in Sources */,
 				E5D90A0D2BCC6AF800FC041C /* NameRouter.swift in Sources */,
 				E5D90A202BCC824F00FC041C /* ShowNameDataInteractor.swift in Sources */,
