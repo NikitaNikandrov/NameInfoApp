@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ShowNameDataViewProtocol: AnyObject {
-    func showDataOfName(age: String?, gender: String?, nation: String?)
+    func showDataOfName(age: String?, gender: String?, nation: [NationData]?)
 }
 
 class ShowNameDataViewController: UIViewController {
@@ -26,11 +26,11 @@ class ShowNameDataViewController: UIViewController {
 }
 
 extension ShowNameDataViewController: ShowNameDataViewProtocol {
-    func showDataOfName(age: String?, gender: String?, nation: String?) {
+    func showDataOfName(age: String?, gender: String?, nation: [NationData]?) {
         DispatchQueue.main.async {
             self.ageValueLabel?.text = age
             self.genderValueLabel?.text = gender
-            self.nationValueLabel?.text = nation
+            //self.nationValueLabel?.text = nation
         }
     }
 }

@@ -11,7 +11,6 @@
 		E5D909EA2BCC0CD500FC041C /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D909E92BCC0CD500FC041C /* NameViewController.swift */; };
 		E5D909EF2BCC0CD700FC041C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D909EE2BCC0CD700FC041C /* Assets.xcassets */; };
 		E5D909F22BCC0CD700FC041C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E5D909F12BCC0CD700FC041C /* Base */; };
-		E5D909FE2BCC231E00FC041C /* NamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D909FD2BCC231E00FC041C /* NamePresenter.swift */; };
 		E5D90A0D2BCC6AF800FC041C /* NameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A0C2BCC6AF800FC041C /* NameRouter.swift */; };
 		E5D90A0F2BCC6BAD00FC041C /* NameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A0E2BCC6BAD00FC041C /* NameInteractor.swift */; };
 		E5D90A112BCC6C5B00FC041C /* NameModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A102BCC6C5B00FC041C /* NameModuleBuilder.swift */; };
@@ -27,6 +26,9 @@
 		E5D90A282BD41D8400FC041C /* GenderServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A272BD41D8400FC041C /* GenderServiceModel.swift */; };
 		E5D90A2A2BD41D9500FC041C /* NationServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A292BD41D9500FC041C /* NationServiceModel.swift */; };
 		E5D90A2E2BD4255400FC041C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A2D2BD4255400FC041C /* NetworkService.swift */; };
+		E5D90A322BE2942C00FC041C /* NationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A312BE2942C00FC041C /* NationData.swift */; };
+		E5D90A342BE3F37900FC041C /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A332BE3F37900FC041C /* NameView.swift */; };
+		E5D90A362BEAD48700FC041C /* NamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A352BEAD48700FC041C /* NamePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +38,6 @@
 		E5D909EE2BCC0CD700FC041C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5D909F12BCC0CD700FC041C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5D909F32BCC0CD700FC041C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5D909FD2BCC231E00FC041C /* NamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePresenter.swift; sourceTree = "<group>"; };
 		E5D90A0C2BCC6AF800FC041C /* NameRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRouter.swift; sourceTree = "<group>"; };
 		E5D90A0E2BCC6BAD00FC041C /* NameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInteractor.swift; sourceTree = "<group>"; };
 		E5D90A102BCC6C5B00FC041C /* NameModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameModuleBuilder.swift; sourceTree = "<group>"; };
@@ -52,6 +53,9 @@
 		E5D90A272BD41D8400FC041C /* GenderServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderServiceModel.swift; sourceTree = "<group>"; };
 		E5D90A292BD41D9500FC041C /* NationServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationServiceModel.swift; sourceTree = "<group>"; };
 		E5D90A2D2BD4255400FC041C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E5D90A312BE2942C00FC041C /* NationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationData.swift; sourceTree = "<group>"; };
+		E5D90A332BE3F37900FC041C /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
+		E5D90A352BEAD48700FC041C /* NamePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +90,10 @@
 			children = (
 				E5D90A0A2BCC649800FC041C /* API */,
 				E5D90A082BCC63FE00FC041C /* Application */,
-				E5D90A0B2BCC67B800FC041C /* Name */,
+				E5D90A302BE293CB00FC041C /* Entity */,
+				E5D90A2F2BD4309A00FC041C /* Modules */,
 				E5D90A2C2BD4204900FC041C /* NetworkService */,
 				E5D90A092BCC641B00FC041C /* Resources */,
-				E5D90A182BCC814500FC041C /* ShowNameData */,
 			);
 			path = NameInfoApp;
 			sourceTree = "<group>";
@@ -125,11 +129,12 @@
 		E5D90A0B2BCC67B800FC041C /* Name */ = {
 			isa = PBXGroup;
 			children = (
-				E5D909E92BCC0CD500FC041C /* NameViewController.swift */,
-				E5D909FD2BCC231E00FC041C /* NamePresenter.swift */,
-				E5D90A0C2BCC6AF800FC041C /* NameRouter.swift */,
-				E5D90A0E2BCC6BAD00FC041C /* NameInteractor.swift */,
-				E5D90A102BCC6C5B00FC041C /* NameModuleBuilder.swift */,
+				E5D90A3C2BEAEBA200FC041C /* Builder */,
+				E5D90A3A2BEAEB7E00FC041C /* Interactor */,
+				E5D90A392BEAEB6B00FC041C /* Presenter */,
+				E5D90A3B2BEAEB8E00FC041C /* Router */,
+				E5D90A372BEAEB5000FC041C /* Scene */,
+				E5D90A382BEAEB5E00FC041C /* Views */,
 			);
 			path = Name;
 			sourceTree = "<group>";
@@ -179,6 +184,71 @@
 				E5D90A2D2BD4255400FC041C /* NetworkService.swift */,
 			);
 			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		E5D90A2F2BD4309A00FC041C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A0B2BCC67B800FC041C /* Name */,
+				E5D90A182BCC814500FC041C /* ShowNameData */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E5D90A302BE293CB00FC041C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A312BE2942C00FC041C /* NationData.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		E5D90A372BEAEB5000FC041C /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				E5D909E92BCC0CD500FC041C /* NameViewController.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		E5D90A382BEAEB5E00FC041C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A332BE3F37900FC041C /* NameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E5D90A392BEAEB6B00FC041C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A352BEAD48700FC041C /* NamePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E5D90A3A2BEAEB7E00FC041C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A0E2BCC6BAD00FC041C /* NameInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E5D90A3B2BEAEB8E00FC041C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A0C2BCC6AF800FC041C /* NameRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E5D90A3C2BEAEBA200FC041C /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A102BCC6C5B00FC041C /* NameModuleBuilder.swift */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +324,7 @@
 				E5D90A1E2BCC823900FC041C /* ShowNameDataRouter.swift in Sources */,
 				E5D90A112BCC6C5B00FC041C /* NameModuleBuilder.swift in Sources */,
 				E5D90A172BCC714500FC041C /* NationService.swift in Sources */,
+				E5D90A362BEAD48700FC041C /* NamePresenter.swift in Sources */,
 				E5D90A252BD41D5300FC041C /* AgeServiceModel.swift in Sources */,
 				E5D90A2E2BD4255400FC041C /* NetworkService.swift in Sources */,
 				E5D909EA2BCC0CD500FC041C /* NameViewController.swift in Sources */,
@@ -264,11 +335,12 @@
 				E5D90A222BCC826C00FC041C /* ShowNameDataModuleBuilder.swift in Sources */,
 				E5D90A152BCC710500FC041C /* GenderService.swift in Sources */,
 				E5D90A282BD41D8400FC041C /* GenderServiceModel.swift in Sources */,
+				E5D90A322BE2942C00FC041C /* NationData.swift in Sources */,
 				E5D90A1A2BCC819E00FC041C /* ShowNameDataViewController.swift in Sources */,
 				E5D90A0F2BCC6BAD00FC041C /* NameInteractor.swift in Sources */,
 				E5D90A1C2BCC820E00FC041C /* ShowNameDataPresenter.swift in Sources */,
+				E5D90A342BE3F37900FC041C /* NameView.swift in Sources */,
 				E5D909E62BCC0CD500FC041C /* AppDelegate.swift in Sources */,
-				E5D909FE2BCC231E00FC041C /* NamePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
