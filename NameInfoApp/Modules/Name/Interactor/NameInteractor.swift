@@ -9,7 +9,7 @@ import Foundation
 
 protocol NameInteractorProtocol: AnyObject {
     var presenter: NamePresenterInteractorProtocol? { get set }
-    func fetchDataOfName(name: String)
+    func fetchDataOfName(name: String, completion: @escaping (String, String, [NationData]) -> Void)
 }
 
 class NameInteractor: NameInteractorProtocol {
@@ -24,42 +24,37 @@ class NameInteractor: NameInteractorProtocol {
         self.nationService = nationService
     }
     
-    func fetchDataOfName(name: String) {
+    func fetchDataOfName(name: String, completion: @escaping (String, String, [NationData]) -> Void) {
         let group = DispatchGroup()
         var age = "default age"
         var gender = "default gender"
         var nations: [NationData] = []
-        
+
         group.enter()
         DispatchQueue.global().async {
+            group.enter()
             self.ageService?.loadAge(name: name, completion: { result in
                 switch result {
                 case .success(let ageResult):
                     age = ageResult
                 case .failure(let error):
-                    age = "Age load error \(error)"
+                    age = "Age load error: \(error)"
                 }
+                group.leave()
             })
             
-            group.leave()
-        }
-        
-        group.enter()
-        DispatchQueue.global().async {
+            group.enter()
             self.genderService?.loadGender(name: name, completion: { result in
                 switch result {
                 case .success(let genderResult):
                     gender = genderResult
                 case .failure(let error):
-                    gender = "Gender load error \(error)"
+                    gender = "Gender load error: \(error)"
                 }
+                group.leave()
             })
             
-            group.leave()
-        }
-        
-        group.enter()
-        DispatchQueue.global().async {
+            group.enter()
             self.nationService?.loadNation(name: name, completion: { result in
                 switch result {
                 case .success(let countries):
@@ -71,16 +66,18 @@ class NameInteractor: NameInteractorProtocol {
                     }
                 case .failure(let error):
                     var failNation = NationData()
-                    failNation.countryName = "Nation load error \(error)"
+                    failNation.countryName = "Nation load error: \(error)"
                     nations.append(failNation)
                 }
+                group.leave()
             })
+            
+            group.notify(queue: .main) {
+                completion(age, gender, nations)
+            }
             
             group.leave()
         }
-        
-        group.notify(queue: .main) {
-            self.presenter?.didReceieveDataOfName(age: age, gender: gender, nation: nations)
-        }
     }
+
 }

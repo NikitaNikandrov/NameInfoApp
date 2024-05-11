@@ -16,7 +16,7 @@ protocol NamePresenterInteractorProtocol: AnyObject {
     func didReceieveDataOfName(age: String, gender: String,nation: [NationData])
 }
 
-class NamePresenter {
+class NamePresenter{
     weak var view: NameViewProtocol?
     var router: NameRouterProtocol
     var interactor: NameInteractorProtocol
@@ -34,7 +34,14 @@ extension NamePresenter: NamePresenterViewProtocol {
     }
     
     func searchButtonClicked(with name: String) {
-        interactor.fetchDataOfName(name: name)
+        interactor.fetchDataOfName(name: name) { age, gender, nations in
+            print("Age: \(age)")
+            print("Gender: \(gender)")
+            print("Nations:")
+            for nation in nations {
+                print("Country Name: \(nation.countryName), Probability: \(nation.probability)")
+            }
+        }
     }
 }
 

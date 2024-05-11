@@ -26,6 +26,7 @@ class NameViewController: UIViewController {
         super.viewDidLoad()
         setupViewController()
         setupNameView()
+        hideKeyBoardWithTap()
     }
     
     private func setupViewController() {
@@ -44,5 +45,12 @@ class NameViewController: UIViewController {
         nameView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
         nameView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         nameView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
+    }
+}
+
+extension NameViewController {
+    func hideKeyBoardWithTap() {
+        let tapGesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tapGesture)
     }
 }

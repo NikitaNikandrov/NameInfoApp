@@ -21,17 +21,18 @@ class NationService: NationServiceProtocol {
     func loadNation(name: String, completion: @escaping (Result<[Country], Error>) -> Void) {
         let ageQueryItems: [URLQueryItem] = [ URLQueryItem(name: "name", value: name) ]
         let endpoint = Endpoint(sheme: "https",
-                                host: "api.genderize.io",
+                                host: "api.nationalize.io",
                                 path: "/",
                                 queryItems: ageQueryItems,
                                 httpMethod: "GET",
                                 headers: nil,
                                 body: nil)
-        
         networkService.request(from: endpoint) { (result: Result<NationServiceModelResponse, Error>) in
             switch result {
             case .success(let response):
-                completion(.success(response.country))
+                var nations: [Country] = []
+                nations = response.country
+                completion(.success(nations))
             case .failure(let error):
                 completion(.failure(error))
             }

@@ -9,7 +9,7 @@ import Foundation
 
 struct NationData {
     var countryName: String
-    var probability: Double
+    var probability: Float
     
     init() {
         self.countryName = ""

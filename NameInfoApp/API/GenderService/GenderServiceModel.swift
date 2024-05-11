@@ -11,5 +11,5 @@ struct GenderServiceModelResponse: Codable {
     let count: Int
     let name: String
     let gender: String
-    let probability: Int
+    let probability: Float
 }

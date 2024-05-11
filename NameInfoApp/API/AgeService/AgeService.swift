@@ -27,7 +27,6 @@ class AgeService: AgeServiceProtocol {
                                 httpMethod: "GET",
                                 headers: nil,
                                 body: nil)
-        
         networkService.request(from: endpoint) { (result: Result<AgeServiceModelResponse, Error>) in
             switch result {
             case .success(let response):

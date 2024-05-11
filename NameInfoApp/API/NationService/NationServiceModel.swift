@@ -15,7 +15,7 @@ struct NationServiceModelResponse: Codable {
 
 struct Country: Codable {
     let countryID: String
-    let probability: Double
+    let probability: Float
 
     enum CodingKeys: String, CodingKey {
         case countryID = "country_id"
