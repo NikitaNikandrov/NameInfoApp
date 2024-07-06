@@ -79,5 +79,4 @@ class NameInteractor: NameInteractorProtocol {
             group.leave()
         }
     }
-
 }

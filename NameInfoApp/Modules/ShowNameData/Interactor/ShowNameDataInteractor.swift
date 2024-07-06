@@ -8,6 +8,7 @@
 import Foundation
 
 protocol ShowNameDataInteractorProtocol: AnyObject {
+    func getNameForTitle() -> String
     func getAgeValue() -> String
     func getGenderValue() -> String
     func getNationValue() -> [NationData]
@@ -16,11 +17,13 @@ protocol ShowNameDataInteractorProtocol: AnyObject {
 class ShowNameDataInteractor {
     weak var presenter: ShowNameDataPresenterProtocol?
     
+    let name: String
     let age: String
     let gender: String
     let nation: [NationData]
     
-    init(age: String, gender: String, nation: [NationData]) {
+    init(name: String, age: String, gender: String, nation: [NationData]) {
+        self.name = name
         self.age = age
         self.gender = gender
         self.nation = nation
@@ -28,6 +31,10 @@ class ShowNameDataInteractor {
 }
 
 extension ShowNameDataInteractor: ShowNameDataInteractorProtocol {
+    func getNameForTitle() -> String {
+        return self.name
+    }
+    
     func getAgeValue() -> String {
         return self.age
     }

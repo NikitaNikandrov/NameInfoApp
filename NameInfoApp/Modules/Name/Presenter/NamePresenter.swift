@@ -13,7 +13,7 @@ protocol NamePresenterViewProtocol: AnyObject {
 }
 
 protocol NamePresenterInteractorProtocol: AnyObject {
-    func didReceieveDataOfName(age: String, gender: String,nation: [NationData])
+    func didReceieveDataOfName(name: String, age: String, gender: String,nation: [NationData])
 }
 
 class NamePresenter{
@@ -35,18 +35,13 @@ extension NamePresenter: NamePresenterViewProtocol {
     
     func searchButtonClicked(with name: String) {
         interactor.fetchDataOfName(name: name) { age, gender, nations in
-            print("Age: \(age)")
-            print("Gender: \(gender)")
-            print("Nations:")
-            for nation in nations {
-                print("Country Name: \(nation.countryName), Probability: \(nation.probability)")
-            }
+            self.router.showNameData(name: name, age: age, gender: gender, nation: nations)
         }
     }
 }
 
 extension NamePresenter: NamePresenterInteractorProtocol {
-    func didReceieveDataOfName(age: String, gender: String, nation: [NationData]) {
-        self.router.showNameData(age: age, gender: gender, nation: nation)
+    func didReceieveDataOfName(name: String, age: String, gender: String, nation: [NationData]) {
+        self.router.showNameData(name: name, age: age, gender: gender, nation: nation)
     }
 }

@@ -48,7 +48,7 @@ class NameView: UIView {
         searchNameDatabutton.translatesAutoresizingMaskIntoConstraints = false
         searchNameDatabutton.setTitle("Search name data", for: .normal)
         searchNameDatabutton.setTitleColor(.white, for: .normal)
-        searchNameDatabutton.backgroundColor = .gray
+        searchNameDatabutton.backgroundColor = .lightGray
         searchNameDatabutton.layer.cornerRadius = 5.0
         searchNameDatabutton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         

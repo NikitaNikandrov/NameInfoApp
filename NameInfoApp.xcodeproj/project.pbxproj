@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E562C7EE2C36FACA00AE703F /* UserDataCollectionViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E562C7ED2C36FACA00AE703F /* UserDataCollectionViewPresenter.swift */; };
+		E562C7F02C372D5C00AE703F /* CellLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E562C7EF2C372D5C00AE703F /* CellLabels.swift */; };
+		E562C7F22C39ECE300AE703F /* DividerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E562C7F12C39ECE300AE703F /* DividerCell.swift */; };
+		E562C7F52C39F92F00AE703F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E562C7F42C39F92F00AE703F /* HeaderView.swift */; };
 		E5D909E62BCC0CD500FC041C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D909E52BCC0CD500FC041C /* AppDelegate.swift */; };
 		E5D909EA2BCC0CD500FC041C /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D909E92BCC0CD500FC041C /* NameViewController.swift */; };
 		E5D909EF2BCC0CD700FC041C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D909EE2BCC0CD700FC041C /* Assets.xcassets */; };
@@ -29,9 +33,16 @@
 		E5D90A322BE2942C00FC041C /* NationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A312BE2942C00FC041C /* NationData.swift */; };
 		E5D90A342BE3F37900FC041C /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A332BE3F37900FC041C /* NameView.swift */; };
 		E5D90A362BEAD48700FC041C /* NamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A352BEAD48700FC041C /* NamePresenter.swift */; };
+		E5D90A412C1791D600FC041C /* PersonDataForCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A402C1791D600FC041C /* PersonDataForCV.swift */; };
+		E5D90A472C1B878600FC041C /* UserDataCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A462C1B878600FC041C /* UserDataCollectionView.swift */; };
+		E5D90A492C1B88A500FC041C /* UserDataCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D90A482C1B88A500FC041C /* UserDataCVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E562C7ED2C36FACA00AE703F /* UserDataCollectionViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCollectionViewPresenter.swift; sourceTree = "<group>"; };
+		E562C7EF2C372D5C00AE703F /* CellLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellLabels.swift; sourceTree = "<group>"; };
+		E562C7F12C39ECE300AE703F /* DividerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerCell.swift; sourceTree = "<group>"; };
+		E562C7F42C39F92F00AE703F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E5D909E22BCC0CD500FC041C /* NameInfoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NameInfoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D909E52BCC0CD500FC041C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5D909E92BCC0CD500FC041C /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +67,9 @@
 		E5D90A312BE2942C00FC041C /* NationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationData.swift; sourceTree = "<group>"; };
 		E5D90A332BE3F37900FC041C /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 		E5D90A352BEAD48700FC041C /* NamePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamePresenter.swift; sourceTree = "<group>"; };
+		E5D90A402C1791D600FC041C /* PersonDataForCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDataForCV.swift; sourceTree = "<group>"; };
+		E5D90A462C1B878600FC041C /* UserDataCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCollectionView.swift; sourceTree = "<group>"; };
+		E5D90A482C1B88A500FC041C /* UserDataCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +83,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E562C7F32C39F90C00AE703F /* UserDataCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A462C1B878600FC041C /* UserDataCollectionView.swift */,
+				E5D90A482C1B88A500FC041C /* UserDataCVCell.swift */,
+				E562C7F12C39ECE300AE703F /* DividerCell.swift */,
+			);
+			path = UserDataCollectionView;
+			sourceTree = "<group>";
+		};
+		E562C7F62C3A098300AE703F /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A192BCC819E00FC041C /* ShowNameDataViewController.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		E562C7F72C3A099400AE703F /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A1B2BCC820E00FC041C /* ShowNameDataPresenter.swift */,
+				E562C7ED2C36FACA00AE703F /* UserDataCollectionViewPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		E562C7F82C3A09A100AE703F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		E562C7F92C3A0A1F00AE703F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A1D2BCC823900FC041C /* ShowNameDataRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E562C7FA2C3A0A3A00AE703F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A1F2BCC824F00FC041C /* ShowNameDataInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E562C7FB2C3A0A4A00AE703F /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				E5D90A212BCC826C00FC041C /* ShowNameDataModuleBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		E5D909D92BCC0CD500FC041C = {
 			isa = PBXGroup;
 			children = (
@@ -142,11 +214,13 @@
 		E5D90A182BCC814500FC041C /* ShowNameData */ = {
 			isa = PBXGroup;
 			children = (
-				E5D90A192BCC819E00FC041C /* ShowNameDataViewController.swift */,
-				E5D90A1B2BCC820E00FC041C /* ShowNameDataPresenter.swift */,
-				E5D90A1D2BCC823900FC041C /* ShowNameDataRouter.swift */,
-				E5D90A1F2BCC824F00FC041C /* ShowNameDataInteractor.swift */,
-				E5D90A212BCC826C00FC041C /* ShowNameDataModuleBuilder.swift */,
+				E562C7FB2C3A0A4A00AE703F /* Builder */,
+				E562C7FA2C3A0A3A00AE703F /* Interactor */,
+				E562C7F92C3A0A1F00AE703F /* Router */,
+				E562C7F82C3A09A100AE703F /* New Group */,
+				E562C7F72C3A099400AE703F /* Presenters */,
+				E562C7F62C3A098300AE703F /* Scene */,
+				E5D90A3D2C0510EF00FC041C /* Views */,
 			);
 			path = ShowNameData;
 			sourceTree = "<group>";
@@ -199,6 +273,8 @@
 			isa = PBXGroup;
 			children = (
 				E5D90A312BE2942C00FC041C /* NationData.swift */,
+				E5D90A402C1791D600FC041C /* PersonDataForCV.swift */,
+				E562C7EF2C372D5C00AE703F /* CellLabels.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -249,6 +325,15 @@
 				E5D90A102BCC6C5B00FC041C /* NameModuleBuilder.swift */,
 			);
 			path = Builder;
+			sourceTree = "<group>";
+		};
+		E5D90A3D2C0510EF00FC041C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E562C7F32C39F90C00AE703F /* UserDataCollectionView */,
+				E562C7F42C39F92F00AE703F /* HeaderView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,25 +406,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E562C7EE2C36FACA00AE703F /* UserDataCollectionViewPresenter.swift in Sources */,
 				E5D90A1E2BCC823900FC041C /* ShowNameDataRouter.swift in Sources */,
 				E5D90A112BCC6C5B00FC041C /* NameModuleBuilder.swift in Sources */,
 				E5D90A172BCC714500FC041C /* NationService.swift in Sources */,
 				E5D90A362BEAD48700FC041C /* NamePresenter.swift in Sources */,
 				E5D90A252BD41D5300FC041C /* AgeServiceModel.swift in Sources */,
+				E5D90A472C1B878600FC041C /* UserDataCollectionView.swift in Sources */,
 				E5D90A2E2BD4255400FC041C /* NetworkService.swift in Sources */,
 				E5D909EA2BCC0CD500FC041C /* NameViewController.swift in Sources */,
 				E5D90A0D2BCC6AF800FC041C /* NameRouter.swift in Sources */,
 				E5D90A202BCC824F00FC041C /* ShowNameDataInteractor.swift in Sources */,
+				E562C7F22C39ECE300AE703F /* DividerCell.swift in Sources */,
 				E5D90A2A2BD41D9500FC041C /* NationServiceModel.swift in Sources */,
 				E5D90A132BCC70C800FC041C /* AgeService.swift in Sources */,
+				E5D90A412C1791D600FC041C /* PersonDataForCV.swift in Sources */,
 				E5D90A222BCC826C00FC041C /* ShowNameDataModuleBuilder.swift in Sources */,
 				E5D90A152BCC710500FC041C /* GenderService.swift in Sources */,
 				E5D90A282BD41D8400FC041C /* GenderServiceModel.swift in Sources */,
 				E5D90A322BE2942C00FC041C /* NationData.swift in Sources */,
+				E562C7F52C39F92F00AE703F /* HeaderView.swift in Sources */,
+				E562C7F02C372D5C00AE703F /* CellLabels.swift in Sources */,
 				E5D90A1A2BCC819E00FC041C /* ShowNameDataViewController.swift in Sources */,
 				E5D90A0F2BCC6BAD00FC041C /* NameInteractor.swift in Sources */,
 				E5D90A1C2BCC820E00FC041C /* ShowNameDataPresenter.swift in Sources */,
 				E5D90A342BE3F37900FC041C /* NameView.swift in Sources */,
+				E5D90A492C1B88A500FC041C /* UserDataCVCell.swift in Sources */,
 				E5D909E62BCC0CD500FC041C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

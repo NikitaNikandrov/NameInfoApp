@@ -8,13 +8,14 @@
 import UIKit
 
 class ShowNameDataModuleBuilder {
-    static func build(age: String, gender: String, nation: [NationData]) -> ShowNameDataViewController {
+    static func build(name: String,age: String, gender: String, nation: [NationData]) -> ShowNameDataViewController {
         let router = ShowNameDataRouter()
-        let interactor = ShowNameDataInteractor(age: age, gender: gender, nation: nation)
-        let presenter = ShowNameDataPresenter(router: router, interactor: interactor)
+        let interactor = ShowNameDataInteractor(name: name, age: age, gender: gender, nation: nation)
         let viewController = ShowNameDataViewController()
+        let presenter = ShowNameDataPresenter(router: router, interactor: interactor)
+    
         viewController.presenter = presenter
-        presenter.view = viewController
+        presenter.view = viewController as? any ShowNameDataViewProtocol
         interactor.presenter = presenter
         router.viewController = viewController
         

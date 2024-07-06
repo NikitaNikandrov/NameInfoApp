@@ -9,6 +9,7 @@ import Foundation
 
 protocol ShowNameDataPresenterProtocol: AnyObject {
     func viewDidLoaded()
+    func fetchUserData()
 }
 
 class ShowNameDataPresenter {
@@ -23,11 +24,30 @@ class ShowNameDataPresenter {
 }
 
 extension ShowNameDataPresenter: ShowNameDataPresenterProtocol {
+    
     func viewDidLoaded() {
+        fetchUserData()
+    }
+    
+    func fetchUserData() {
+        let name = interactor.getNameForTitle()
         let age = interactor.getAgeValue()
         let gender = interactor.getGenderValue()
         let nation = interactor.getNationValue()
         
-        self.view?.showDataOfName(age: age, gender: gender, nation: nation)
+        var userDataCells: [CellLabels] = []
+        
+        let ageCell = CellLabels(title: "Age:", data: age)
+        userDataCells.append(ageCell)
+        
+        let genderCell = CellLabels(title: "Gender:", data: gender)
+        userDataCells.append(genderCell)
+        
+        for item in nation {
+            let nationCell = CellLabels(title: item.countryName, data: String(item.probability))
+            userDataCells.append(nationCell)
+        }
+        self.view?.setHeaderTitle(title: name)
+        self.view?.updateCollectionView(with: userDataCells)
     }
 }
