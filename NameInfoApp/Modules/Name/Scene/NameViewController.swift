@@ -8,12 +8,15 @@
 import UIKit
 
 protocol NameViewProtocol: AnyObject {
+    func showActivityIndicator()
+    func hideActivityIndicator()
 }
 
 class NameViewController: UIViewController {
     var presenter: NamePresenterViewProtocol?
     
     private lazy var nameView = NameView()
+    private let activityIndicator = UIActivityIndicatorView(style: .medium)
     
     private func searchButtonClicked() {
         guard let searchingName = self.nameView.nameTextField.text else {
@@ -31,6 +34,10 @@ class NameViewController: UIViewController {
     
     private func setupViewController() {
         view.backgroundColor = .white
+        
+        activityIndicator.center = view.center
+        activityIndicator.color = .gray
+        view.addSubview(activityIndicator)
     }
     
     func setupNameView() {
@@ -52,5 +59,19 @@ extension NameViewController {
     func hideKeyBoardWithTap() {
         let tapGesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tapGesture)
+    }
+}
+
+extension NameViewController: NameViewProtocol {
+    func showActivityIndicator() {
+        DispatchQueue.main.async {
+            self.activityIndicator.startAnimating()
+        }
+    }
+    
+    func hideActivityIndicator() {
+        DispatchQueue.main.async {
+            self.activityIndicator.stopAnimating()
+        }
     }
 }

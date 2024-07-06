@@ -34,6 +34,7 @@ extension NamePresenter: NamePresenterViewProtocol {
     }
     
     func searchButtonClicked(with name: String) {
+        self.view?.showActivityIndicator()
         interactor.fetchDataOfName(name: name) { age, gender, nations in
             self.router.showNameData(name: name, age: age, gender: gender, nation: nations)
         }
