@@ -23,3 +23,5 @@ https://api.nationalize.io/?name=vadim
 ## Будет плюсом:
 * Не использовать StoryBoard, Xib
 * Использовать архитектуру VIPER
+![Simulator Screenshot - iPhone 15 - 2024-07-07 at 02 22 34](https://github.com/NikitaNikandrov/NameInfoApp/assets/71771889/e5f85b11-9f97-4076-aa59-e236c0d6b7d3)
+![Simulator Screenshot - iPhone 15 - 2024-07-07 at 02 22 46](https://github.com/NikitaNikandrov/NameInfoApp/assets/71771889/fb2e1281-a1cb-4188-b50c-79704c949b02)
